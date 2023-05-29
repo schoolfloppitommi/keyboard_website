@@ -1,0 +1,142 @@
+html {font-size: 112.5%;} /*18px*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+  background: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
+}
+
+p {margin-bottom: 1rem;}
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {font-size: 2.441rem;}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.25rem;}
+
+small, .text_small {font-size: 0.8rem;}
+.navbar{
+  padding: 20px;
+}
+.navbar_items{
+  display: flex;
+  justify-content: space-between;
+}
+.modded{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.keyboard{
+  background-color: #F9F7F3;
+  width: 340px;
+  margin: 20px;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+.keyboard-image{
+  height: 170px;
+  width: auto;
+  background-color: aqua;
+  margin-bottom: 10px;
+  background-size: cover;
+}
+.key-1{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM74L5sc0Zif0I-E_LYvH_9p9uSmttRBA5yw&usqp=CAU);
+}
+.key-2{
+  background-image: url(https://media.karousell.com/media/photos/products/2021/9/3/royal_kludge_rk71_keycaps_1630656253_61f449eb.jpg);
+}
+.keyboard a{
+  background-color: #EDDEA4;
+  padding: 5px;
+  display: block;
+  text-align: center;
+  margin: 20px 15px;
+  border-radius: 5px;
+  color: #F7A072;
+}
+.text{
+  text-align: center;
+}
+.keyboard:hover{
+  cursor: pointer;
+  background-color: #B5E2FA;
+  color: #0FA3B1;
+  transform: scale(1.1, 1.1);
+}
+a:hover{
+  transition: width 2s ease-in-out;
+  transition-delay: 1s;
+}
+.top-5{
+  height: 250px;
+  width: auto;
+  margin: 40px;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 13px;
+  grid-row-gap: 14px;
+}
