@@ -73,8 +73,19 @@ h4 {font-size: 1.563rem;}
 h5 {font-size: 1.25rem;}
 
 small, .text_small {font-size: 0.8rem;}
-.navbar{
+nav{
   padding: 20px;
+}
+a{
+  color: inherit;
+  text-decoration: inherit; /* no underline */
+}
+a:hover{
+  text-decoration: underline;
+  color: #F7A072;
+}
+.nav-style{
+  font-size: 30px;
 }
 .navbar_items{
   display: flex;
@@ -99,6 +110,8 @@ small, .text_small {font-size: 0.8rem;}
   background-color: aqua;
   margin-bottom: 10px;
   background-size: cover;
+  border-top: #000000;
+  border-radius: 20px;
 }
 .key-1{
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM74L5sc0Zif0I-E_LYvH_9p9uSmttRBA5yw&usqp=CAU);
@@ -133,10 +146,39 @@ a:hover{
   width: auto;
   margin: 40px;
 }
-.grid{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 13px;
-  grid-row-gap: 14px;
+@media only screen and (max-width: 600px) {
+  .top-5{
+    width: 400px;
+    height: auto;
+    margin: auto;
+  }
+  .grid{
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 22px;
+  }
+}
+@media only screen and (min-width: 1135px) {
+  .top-5{
+    height: 250px;
+    width: auto;
+    margin: 40px;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 13px;
+    grid-row-gap: 14px;
+  }
+}
+.top-5:hover{
+  transform: none;
+}
+.center{
+  display: block;
+  text-align: center;
 }
